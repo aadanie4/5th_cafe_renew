@@ -443,10 +443,10 @@ section .para {
     outline: none;
 }
 .slick-prev {
-    background-image: url('./image/arrow_left.png');
+    background-image: url('../image/arrow_left.png');
 }
 .slick-next {
-    background-image: url('./image/arrow_right.png');
+    background-image: url('../image/arrow_right.png');
 }
 
 .slick-prev.slick-arrow{ /* prev 이전 */

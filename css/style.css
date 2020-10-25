@@ -316,7 +316,7 @@ section .para {
 
 }
 #sns img {
-    transition-duration: 0.8s;
+    transition-duration: 0.7s;
 }
 #sns img:hover {
     transform: scale(1.05);

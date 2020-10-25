@@ -44,10 +44,10 @@ img { border: none;}
 
 /* main_gnb */
 #main_header > .main_gnb {
-    width: 900px;  height: 22px;
+    width: 1000px;  height: 22px;
     margin: 0 auto;
     position: absolute;
-    left: 150px;
+    left: 100px;
     bottom: 30px;
     text-align: center;
     /* outline: 1px solid red; */
@@ -59,7 +59,8 @@ img { border: none;}
 }
 .main_gnb > .depth1 > li {
     float: left;
-    width: calc(900px / 5);
+    width: calc(1000px / 5);
+    /* outline: 1px solid pink; */
 }
 .main_gnb > .depth1  a {
     /* outline: 1px solid blue; */
@@ -164,15 +165,14 @@ section .para {
 /* content1: 케익 슬라이드 영역 */
 #content1 { 
     width: 1200px;
+    /* outline: 1px solid blue; */
 }
-#content1 > .sliders { overflow: hidden;}
-#content1 > .sliders > a > img {
-    float: left;
-    margin-right: 19.5px;
+#content1 img {
+    margin: 0 auto;
 }
-#content1 > .sliders > a:last-child > img {
-    margin-right: 0;
-}
+
+
+
 
 /* contetn2: 프랜차이즈 영역*/
 #franchise { 
@@ -424,3 +424,58 @@ section .para {
     left: 643px; bottom: 119px;
 }
 
+
+/* 화살표 */
+.slick-arrow{
+    /* z-index: 2;  */
+    /* prev버튼은 위치 이동시 이미지 뒤로 숨겨짐 */
+    position:absolute;  /* 원하는 위치에 지정  */
+    top: 50%; 
+    width: 23px; 
+    height: 103px; 
+    transform: translateY(-65%);
+    border: none;
+    text-indent: -9999px;
+    background-color: transparent;
+}
+.slick-arrow:focus {
+    border: none;
+    outline: none;
+}
+.slick-prev {
+    background-image: url('../image/arrow_left.png');
+}
+.slick-next {
+    background-image: url('../image/arrow_right.png');
+}
+
+.slick-prev.slick-arrow{ /* prev 이전 */
+    left: -50px;
+}
+.slick-next.slick-arrow{ /* next 다음 */
+    right: -50px;
+}
+        
+/* 아래점 */
+.slick-dots{ 
+    text-align: center;
+}
+.slick-dots li{
+    display: inline-block; 
+    margin: 20px 5px;
+}
+
+.slick-dots button { 
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 100px;
+    text-indent: -9999px;
+    background-color: #adc178;
+}
+
+.slick-dots button:focus {
+    border: none;
+    outline: none;
+}
+        

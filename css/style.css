@@ -314,12 +314,10 @@ section .para {
     color: #fff;
 }
 
-#sns img {
-    transition-duration: 0.7s;
-}
 #sns img:hover {
     transform: scale(1.05);
     opacity: 0.8;
+     transition-duration: 0.7s;
 }
 
 /* news, icon 섹션 */

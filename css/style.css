@@ -494,4 +494,12 @@ section .para {
 .slick-dots button:focus {
     border: none;
     outline: none;
+    background-color: #7d7d7d;
+   
 }
+
+.slick-dots button:hover,
+.slick-dots button:active {
+    background-color: #848485;
+}
+

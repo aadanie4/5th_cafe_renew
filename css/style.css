@@ -287,36 +287,38 @@ section .para {
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
+    /* outline: 2px solid blue; */
 }
-#sns > .sns_img a {
+#sns > .sns_img > .img_wrap {
     float: left;
+    width: 285px;
+    overflow: hidden;
 
 }
-#sns > .sns_img img {
+#sns > .sns_img > .img_wrap {
     margin-right: 20px;
     margin-bottom: 20px;
+    /* outline: 2px solid red; */
 }
 
-#sns > .sns_img > a:nth-child(4) > img,
-#sns > .sns_img > a:nth-child(8) > img { 
-    margin-right: 0;
-}
-#sns > .sns_img > a:nth-child(5) > img,
-#sns > .sns_img > a:nth-child(6) > img,
-#sns > .sns_img > a:nth-child(7) > img,
-#sns > .sns_img > a:nth-child(8) > img { 
-    margin-bottom: 0px;
-}
+#sns > .sns_img > div:nth-child(4) { margin-right: 0;}
+#sns > .sns_img > div:nth-child(8) { margin-right: 0;}
+
+#sns > .sns_img > div:nth-child(5),
+#sns > .sns_img > div:nth-child(6),
+#sns > .sns_img > div:nth-child(7),
+#sns > .sns_img > div:nth-child(8) { margin-bottom: 0;}
+
+
 #sns > .para p {
     color: #fff;
 }
 
 #sns img:hover {
-    transform: scale(1.05);
-    opacity: 0.8;
-    transition-duration: 0.8s;
+    transform: scale(1.2);
+    transition-duration: 1s;
+    
 }
-
 /* news, icon 섹션 */
 #news {
     width: 1200px; 

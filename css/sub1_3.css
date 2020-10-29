@@ -1,0 +1,52 @@
+/* map style css */
+
+/* header */
+#sub_header {
+    width: 100%; height: 280px;
+    background-color: lightgreen;
+    position: relative;
+}
+
+#sub_header > .title {
+    padding-top: 105px;
+    color: #fff;
+}
+
+#sub_header h2 { 
+    font-size: 42px;
+    font-family: 'metropolis-bold';
+}
+#sub_header p { 
+    padding-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#sub_header > .sub_lnb {
+    /* outline: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+#sub_header > .sub_lnb > ul > li {
+    /* outline: 1px solid blue; */
+    display: inline-block;
+}
+
+#sub_header > .sub_lnb > ul > li > a { 
+    padding: 0 20px;
+    font-size: 18px;
+    color: #fff;
+}
+#sub_header span { 
+    color: #fff;
+}
+
+/* map 영역 */
+
+#map { 
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
